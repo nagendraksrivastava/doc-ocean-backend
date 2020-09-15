@@ -1,0 +1,127 @@
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Home</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="#on-board-expert">On-board As Expert</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a class="playstore-download" href="">
+                  <img src="google-play-badge.png"></img>
+                </a>
+              </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<!-- Full Width Image Header -->
+<header class="header-image">
+    <div class="headline">
+        <div class="container">
+            <h1>DOC-OCEAN</h1>
+            <h2>On-demand Health Service</h2>
+            <h4>Find nearest and best expert to restore your health</h4>
+        </div>
+    </div>
+</header>
+
+<!-- Page Content -->
+<div class="container">
+
+    <hr class="featurette-divider">
+
+    <!-- First Featurette -->
+    <span class="no-header-overlap" id="services"></span>
+    <div class="featurette">
+        <img class="featurette-image img-circle img-responsive pull-right" src="doctor-patient.jpg">
+        <h2 class="featurette-heading">Services</h2>
+        <ul class="points">
+          <li>We on-board health service experts of various area</li>
+          <li>We help in fixing an appointment with best and nearest expert</li>
+          <li>We provide on-demand and scheduled appointments</li>
+          <li>We offer service at your door-step as well as at expert's place</li>
+        </ul>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- Second Featurette -->
+    <span class="no-header-overlap" id="on-board-expert"></span>
+    <div class="featurette">
+      <img class="featurette-image img-circle img-responsive pull-right" src="expert-group.jpg">
+        <h2 class="featurette-heading">On-board As Expert</h2>
+        <div class="row">
+          <div class="col-lg-6"
+            <div class="expert-form">
+              <p class="normal-text">Fill out the form below. We will reach you soon.</p>
+              <form name="expert-detail" action="/signup_request" method="POST">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" class="form-control" id="name" name="expert[full_name]" placeholder="Enter your full name" required="true">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" name="expert[email]" aria-describedby="emailHelp" placeholder="Enter email" required="true">
+                </div>
+                <div class="form-group">
+                  <label for="phone-no">Mobile</label>
+                  <input type="tel" class="form-control" id="phone-no" name="expert[mobile]" aria-describedby="emailHelp" placeholder="Enter mobile" required="true">
+                </div>
+                <div class="form-group">
+                  <label for="exampleSelect1">Profession</label>
+                  <select class="form-control" id="expert-profession" name="expert[profession]" required="true">
+                    <option>Doctor</option>
+                    <option>Nurse</option>
+                    <option>Pathologist</option>
+                  </select>
+                </div>
+                <!-- <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="tnc"> Accept <a>terms and conditions</a>
+                  </label>
+                </div> -->
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+            <div class="col-lg-6">
+            </div>
+          </div> <!-- row end -->
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright &copy; doc-ocean 2016</p>
+            </div>
+        </div>
+    </footer>
+
+</div>
+<!-- /.container -->
